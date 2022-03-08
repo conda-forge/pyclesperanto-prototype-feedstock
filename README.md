@@ -5,7 +5,7 @@ Home: https://github.com/clEsperanto/pyclesperanto_prototype
 
 Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyclesperanto-prototype-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyclesperanto-prototype-feedstock/blob/main/LICENSE.txt)
 
 Summary: GPU-accelerated image processing in python using OpenCL
 
@@ -15,8 +15,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15415&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyclesperanto-prototype-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15415&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyclesperanto-prototype-feedstock?branchName=main">
       </a>
     </td>
   </tr>
