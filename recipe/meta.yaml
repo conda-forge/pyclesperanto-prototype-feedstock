@@ -1,5 +1,5 @@
 {% set name = "pyclesperanto-prototype" %}
-{% set version = "0.18.4" %}
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyclesperanto_prototype-{{ version }}.tar.gz
-  sha256: 0d7bc3c774e5cdf23d3d2234f3b9dae2e0c034700238d52beac328a93c002c58
+  sha256: 0046469c9cba6c58c7b9865fdd36fe7c1019e83a7fd035c009c77382a0987342
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - platformdirs
     - pyopencl
     - python >=3.6
-    - scikit-image >=0.18.0
+    - scikit-image >=0.19.0
     - toolz
     - transforms3d
 
