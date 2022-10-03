@@ -1,5 +1,5 @@
 {% set name = "pyclesperanto-prototype" %}
-{% set version = "0.19.2" %}
+{% set version = "0.19.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyclesperanto_prototype-{{ version }}.tar.gz
-  sha256: 9dec23d5bab2a6a4bb0cfab8453f28f1a54fda30cd21a0e72b183df140baaa4a
+  sha256: fad69db490a8da5d1df03425f55277e6a921a31ef2c7625f1698ef089735c1f6
 
 build:
   noarch: python
