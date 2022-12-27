@@ -1,5 +1,5 @@
 {% set name = "pyclesperanto-prototype" %}
-{% set version = "0.21.0" %}
+{% set version = "0.21.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyclesperanto_prototype-{{ version }}.tar.gz
-  sha256: 2c38bb5d7095bb65bed1378c9d9b94ac67b11c8391a004747c309be00b353c53
+  sha256: 9514e201880263db2c2b70bf497741b0d06badf35ec687ddd8e0d20ef21fa738
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - python >=3.6
   run:
     - matplotlib-base
-    - numpy !=1.19.4
+    - numpy !=1.19.4, <1.24
     - platformdirs
     - pyopencl
     - python >=3.6
