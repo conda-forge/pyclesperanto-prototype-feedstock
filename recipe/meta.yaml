@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyclesperanto_prototype-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyclesperanto_prototype-{{ version }}.tar.gz
   sha256: 3c27455ff57374cf8283e9c7bc02a8c14f2cb2685cb68730ff8578426280e437
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - matplotlib-base
     - numpy !=1.19.4
     - platformdirs
     - pyopencl
-    - python >=3.6
+    - python >={{ python_min }}
     - scikit-image >=0.18.0, !=0.20.0
     - toolz
     - transforms3d
@@ -38,6 +38,7 @@ test:
     - pip
     - pocl  # [not win]
     - oclgrind  # [win]
+    - python {{ python_min }}
 
 about:
   home: https://github.com/clEsperanto/pyclesperanto_prototype
