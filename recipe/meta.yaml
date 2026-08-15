@@ -1,18 +1,18 @@
 {% set name = "pyclesperanto-prototype" %}
-{% set version = "0.24.4" %}
+{% set version = "0.24.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyclesperanto_prototype-{{ version }}.tar.gz
-  sha256: 3c27455ff57374cf8283e9c7bc02a8c14f2cb2685cb68730ff8578426280e437
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pyclesperanto_prototype-{{ version }}.tar.gz
+  sha256: 07e292867df39cd809e46e6ca033494e437c0f6f012a56540a765f649c056ead
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
